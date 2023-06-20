@@ -98,7 +98,7 @@ jenkinsVersions
                     mapOf(
                         "JENKINS_WAR" to downloadJenkinsTask.get().outputs.files.singleFile,
                         "LOCAL_JARS" to gradlePlugin.singleFile,
-                        "BROWSER" to if (ciJenkinsBuild) "firefox-container" else "chrome"
+                        "BROWSER" to if (ciJenkinsBuild) "chrome-container" else "chrome"
                     )
                 )
             }
